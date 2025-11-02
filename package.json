@@ -18,6 +18,16 @@
   "jest": {
     "transform": {
       "^.+\\.js$": "babel-jest"
-    }
+    },
+    "modulePathIgnorePatterns": [
+      "<rootDir>/.stryker-tmp"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/.stryker-tmp/"
+    ],
+    "watchPathIgnorePatterns": [
+      "<rootDir>/.stryker-tmp"
+    ]
   }
 }
